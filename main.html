@@ -21,7 +21,7 @@
             </ul>
         </nav>
 
-        <header>
+        <header id = "main-header">
             <h1>The HTML Reference Page!</h1>
             <p>For all your HTML reference needs!</p>
         </header>
@@ -32,7 +32,17 @@
                 <header>
                     <h2>What is HTML?</h2> 
                 </header>
-                
+                <p>HTML stands for Hyper Text Markup Language and it's job is to provide the structure to webpages. It does this by using <em>Elements</em> which act as
+                    building blocks for the page. Using HTML, we can tell the browser if a part of the page is a(n):
+                </p>
+                <ul>
+                    <li>Heading</li>
+                    <li>Paragraph</li>
+                    <li>Link</li>
+                    <li>Image</li>
+                    <li>Section</li>
+                </ul>
+                <p>Below, we will tell you how to use the elements and give examples of the elements you will use the most.</p>
 
             </section>
 
@@ -40,6 +50,14 @@
                 <header>
                     <h2>Getting Started</h2>
                 </header>
+                <p>Using elements is the most important part of HTML and, luckily, they all follow the same general pattern making it much eaiser for us. All elements use
+                    <em>Tags</em> to describe what they are and all Tags have an opening and closing as shown below.
+                </p>
+                <code>&lt;h1&gt;This is a main Heading &lt;/h1&gt;</code>
+                <p>The &lt;h1&gt; tag is called the opening tag and the &lt;/h1&gt; is the closing tag. Everything inbetween those two is the text that is made into the heading (which is what the h1 means).
+                    This is the general stucture that all elements will take on in HTML.
+                </p>
+
                 
 
             </section>
@@ -48,14 +66,47 @@
                 <header>
                     <h2>Main Elements</h2>
                 </header>
+                <p>There are hundreds of elements in HTML and even the most experienced Developers still need to look some up every now and then but here is a list of the ones that you will be using most:</p>
+                <ul>
+                    <li>h1-6 -> Headings</li>
+                    <li>p -> Paragraphs</li>
+                    <li>a -> Links</li>
+                    <li>img -> Images</li>
+                </ul>
+                <h3>Headings</h3>
+                <p>Headings are the titles and subtitles we use for each  section in our page. They are ranked from 1 to 6 in terms of scope with 1 being the largest and 6 being the smallest. This is an example
+                    of a heading of the third size:
+                </p>
+                <code>&lt;h3&gt;This is the third sized Heading &lt;/h3&gt;</code>
                 
+                <h3>Paragraphs</h3>
+                <p>Paragraphs are the simplest element to use. They are simply the text you want in paragraph form on the page. Below is an example of how its used.</p>
+                <code>&lt;p&gt;Paragraph text&lt;/p&gt;</code>
+
+                <h3>Links</h3>
+                <p>Links require the most out of the main elements because you have to specify where the link points to. The user also needs somewhere to click to follow the link which will be the text you 
+                    put in between the opening and closing tags. This is how we use the link tag: 
+                </p>
+                <code>&lt;a href = "URL for the link"&gt;Text the user clicks to follow link&lt;a&gt;</code>
+
+                <h3>Images</h3>
+                <p>Images can also be tricky to use but as long as you remember one simple idea you shouldn't have any issues. That idea is that the page always needs to be able to find the image. That means 
+                    the image location either has to be the image location on the web or where it is saved on your local machine. Keeping that in mind will save you a lot of headache with images. Another property of 
+                    images is that if the image can't be found for whatever reason, there needs to be text describing what should be there. Thats the purpose of the <em>alt</em> part of the tag. Below is an 
+                    example of the image tag in use.
+                </p>
+                <code>&lt;img src ="location of the image" alt= "an alternate text from the image"&gt;This is the third sized Heading &lt;/h3&gt;</code>
             </section>
 
             <section id = "Structure" class = "main-section">
                 <header>
                     <h2>Structure</h2>
                 </header>
-                
+                <p>The second job of HTML besides describing the diferent parts of the page is also structuring the page. We do this by breaking the page into mulitple pieces using a tag called the 
+                        <em>Division</em> tag. A good example of how this tag is used is if we had a page with multiple articles, we would want to give each article its own division so the page knows they are 
+                        seperate entities. We can also have divisions inside of divisions for added layers of strucutre. Below is how we use the division tag.
+                </p>
+                <code>&lt;div&gt;All the content inside the division&lt;/div&gt;</code>
 
             </section>
 
@@ -63,6 +114,9 @@
                 <header>
                     <h2>What's Next?</h2>
                 </header>
+                <p>Once you have good experience with using HTML to structure your page for the browser you might notice something. The page looks kinda boring. Theres no colors and the text just all seems to be
+                    hagning around. This is when you move onto the next technology in Web Development, CSS. CSS is how we chose how the page will look to the user. That is the next recommended thing for you to learn.
+                </p>
                 
 
             </section>
